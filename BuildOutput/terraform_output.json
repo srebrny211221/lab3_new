@@ -1,0 +1,116 @@
+{
+  "azurerm_public_ip": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "allocation_method": "string",
+        "availability_zone": "string",
+        "domain_name_label": "string",
+        "fqdn": "string",
+        "id": "string",
+        "idle_timeout_in_minutes": "number",
+        "ip_address": "string",
+        "ip_tags": [
+          "map",
+          "string"
+        ],
+        "ip_version": "string",
+        "location": "string",
+        "name": "string",
+        "public_ip_prefix_id": "string",
+        "resource_group_name": "string",
+        "reverse_fqdn": "string",
+        "sku": "string",
+        "sku_tier": "string",
+        "tags": [
+          "map",
+          "string"
+        ],
+        "timeouts": [
+          "object",
+          {
+            "create": "string",
+            "delete": "string",
+            "read": "string",
+            "update": "string"
+          }
+        ],
+        "zones": [
+          "list",
+          "string"
+        ]
+      }
+    ],
+    "value": {
+      "allocation_method": "Static",
+      "availability_zone": "No-Zone",
+      "domain_name_label": null,
+      "fqdn": null,
+      "id": "/subscriptions/41dba9b5-0f32-44f8-ad43-32eec4a1e968/resourceGroups/rg-lab3-ks-ks/providers/Microsoft.Network/publicIPAddresses/pip-lab3-ks-ks",
+      "idle_timeout_in_minutes": 4,
+      "ip_address": "20.162.212.121",
+      "ip_tags": null,
+      "ip_version": "IPv4",
+      "location": "uksouth",
+      "name": "pip-lab3-ks-ks",
+      "public_ip_prefix_id": null,
+      "resource_group_name": "rg-lab3-ks-ks",
+      "reverse_fqdn": null,
+      "sku": "Basic",
+      "sku_tier": "Regional",
+      "tags": {
+        "OwnerName": "ZSP",
+        "application": "Lab_3",
+        "criticality": "Tier 3",
+        "environment": "ks",
+        "org": "ZSP",
+        "provisioner": "terraform",
+        "source": "kainosteaching_lab3",
+        "version": "0.0.0-Undefined"
+      },
+      "timeouts": null,
+      "zones": []
+    }
+  },
+  "resource_group": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "id": "string",
+        "location": "string",
+        "name": "string",
+        "tags": [
+          "map",
+          "string"
+        ],
+        "timeouts": [
+          "object",
+          {
+            "create": "string",
+            "delete": "string",
+            "read": "string",
+            "update": "string"
+          }
+        ]
+      }
+    ],
+    "value": {
+      "id": "/subscriptions/41dba9b5-0f32-44f8-ad43-32eec4a1e968/resourceGroups/rg-lab3-ks-ks",
+      "location": "uksouth",
+      "name": "rg-lab3-ks-ks",
+      "tags": {
+        "OwnerName": "ZSP",
+        "application": "Lab_3",
+        "criticality": "Tier 3",
+        "environment": "ks",
+        "org": "ZSP",
+        "provisioner": "terraform",
+        "source": "kainosteaching_lab3",
+        "version": "0.0.0-Undefined"
+      },
+      "timeouts": null
+    }
+  }
+}
